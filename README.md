@@ -53,3 +53,7 @@ This enables the use of a common processing route in both the resolve and reject
 The code uses Node's built-in 'http' and 'https' modules to fetch URLs. Specifying a protocol other than HTTP/HTTPS will cause that URL to fail, and no attempt is made to infer a protocol for any URL where none is specified (e.g. 'example.com').
 
 No timeouts are set, so the Promise could stay pending indefinitely in some failure-type scenarios.
+
+## Unit test
+
+`node test/unitTest.js` tests the module against basic success & failure scenarios, using sample JSON exposed on a Gist.
